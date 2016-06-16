@@ -71,9 +71,6 @@ $(document).ready(function(){
     }
   });
 
-
-
-
   var FormView = Backbone.View.extend({
       el: '<div></div>',
 
@@ -91,7 +88,6 @@ $(document).ready(function(){
     updateStatus: function(e){
       e.preventDefault();
       var $form = $(e.currentTarget);
-      var $target = $(e.currentTarget).closest('div');
       var statusUpdate = $form.find('[name="new_content"]').val();
       this.model.set('content', statusUpdate);
       this.model.save('content', statusUpdate);
@@ -103,9 +99,6 @@ $(document).ready(function(){
       return this;
     }
   });
-
-
-
 
 
   var StatusListView = Backbone.View.extend({
@@ -126,10 +119,6 @@ $(document).ready(function(){
     }
   });
 
-
-
-
-
   var statusCollection = new StatusCollection();
 
   statusCollection.fetch({
@@ -149,5 +138,4 @@ $(document).ready(function(){
     statusCollection.add(newStatus);
     $('#form').each(function(){this.reset();});
   });
-
 });

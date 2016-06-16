@@ -2,7 +2,6 @@ body {
   padding: 30px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
-  color: #464646;
 }
 
 a {
@@ -63,4 +62,6 @@ span, #fav_icon, #status_delete, #status_update {
 
 #intro {
   width: 70%;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #333;
 }
