@@ -7,8 +7,11 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var posts = require('./routes/posts');
 
 var app = express();
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/Item');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -22,6 +25,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/posts', posts);
 app.use('/', routes);
 app.use('/users', users);
 
