@@ -25,7 +25,6 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "devDependencies": {
-    "browserify": "^13.0.1",
     "nodemon": "^1.9.2"
   }
 }
