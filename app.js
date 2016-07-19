@@ -11,7 +11,7 @@ var posts = require('./routes/posts');
 
 var app = express();
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/Item');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/Item');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
