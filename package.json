@@ -18,12 +18,11 @@
     "gulp": "^3.9.1",
     "jquery": "^3.0.0",
     "morgan": "^1.6.1",
+    "nodemon": "^1.9.2",
     "serve-favicon": "^2.3.0",
     "underscore": "^1.8.3",
     "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0",
-    "browserify": "^13.0.1",
-    "nodemon": "^1.9.2"
+    "vinyl-source-stream": "^1.1.0"
   },
   "devDependencies": {
     "browserify": "^13.0.1",
