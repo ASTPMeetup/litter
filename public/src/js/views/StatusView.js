@@ -7,6 +7,7 @@ var StatusView = Backbone.View.extend({
 
   initialize: function(){
     this.model.on('change', this.render, this);
+    this.listenTo(this.model, 'update', this.render);
   },
 
   template: _.template('\
@@ -17,7 +18,7 @@ var StatusView = Backbone.View.extend({
       </div>\
       \
       <div class="container">\
-          <p><%= post.get("content") %></p>\
+          <p id="content_p"><%= post.get("content") %></p>\
         \
           <img src="/images/delete.png" id="status_delete">\
           <img src="/images/update.png" id="status_update">\

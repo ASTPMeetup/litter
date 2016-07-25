@@ -79,6 +79,7 @@ span, #fav_icon, #status_delete, #status_update {
 #intro {
   width: 70%;
   color: #737373;
+  font-size: 20px;
 }
 
 .nav {
@@ -106,4 +107,16 @@ textarea, textarea > input:focus {
   #intro {
     width: 100%;
   }
+  #app {
+    padding: 0px;
+  }
+}
+
+#app {
+  padding-left: 10px;
+}
+
+#content_p {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
