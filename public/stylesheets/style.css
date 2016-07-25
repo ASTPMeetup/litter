@@ -1,5 +1,4 @@
 body {
-  /*padding: 30px;*/
   font-size: 20px;
   position: relative;
   width: 100%;
@@ -14,6 +13,12 @@ body {
   background-color: #ffffff;
   color: white;
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-left: 20px;
+  }
 }
 
 a {
@@ -111,10 +116,6 @@ textarea, textarea > input:focus {
     padding: 0px;
   }
 }
-
-/*#app {
-  padding-left: 10px;
-}*/
 
 #content_p {
   padding-top: 10px;
