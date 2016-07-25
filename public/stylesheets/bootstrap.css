@@ -4178,6 +4178,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .navbar-header {
     padding-left: 10px;
+    padding-top: 15px;
     float: left;
   }
 }
