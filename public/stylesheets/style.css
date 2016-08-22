@@ -15,12 +15,6 @@ body {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-@media (max-width: 767px) {
-  body {
-    padding-left: 20px;
-  }
-}
-
 a {
   color: #00B7FF;
 }
@@ -79,6 +73,7 @@ span, #fav_icon, #status_delete, #status_update {
   padding-left: 10px;
   float: right;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 #intro {
