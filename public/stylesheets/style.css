@@ -28,7 +28,6 @@ a {
   height: 35px;
   border-radius: 10px;
   width: 80px;
-  border: 1px solid #cccccc;
   margin-top: 10px;
   float: right;
 }
@@ -73,13 +72,10 @@ span, #fav_icon, #status_delete, #status_update {
   padding-left: 10px;
   float: right;
   margin-right: 10px;
-  margin-bottom: 10px;
 }
 
 #intro {
-  width: 70%;
   color: #737373;
-  font-size: 20px;
 }
 
 .nav {
@@ -91,10 +87,10 @@ textarea, textarea > input:focus {
   outline: none;
   text-decoration: none;
   border-color: transparent;
-  color: #737373;
+  color: #2f4f4f;
   outline: none;
-  background-color: #ffffff;
-  font-size: 20px;
+  background-color: #ceebfd;
+  font-size: 30px;
   border-radius: 5%;
 }
 
@@ -115,4 +111,9 @@ textarea, textarea > input:focus {
 #content_p {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+#app {
+  /*border-left: 2px solid #fff;*/
+  padding: 20px;
 }

@@ -1086,7 +1086,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #595959;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 input,
 button,
@@ -1148,7 +1148,7 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #;
+  border-top: 3px solid #fff;
 }
 .sr-only {
   position: absolute;
@@ -1476,10 +1476,10 @@ abbr[data-original-title] {
   text-transform: uppercase;
 }
 blockquote {
-  padding: 10px 40px;
+  padding: 0px 40px;
   margin: 0 0 20px;
   font-size: 17.5px;
-  border-left: 5px solid #eee;
+  border-left: 3px solid gray;
 }
 blockquote p:last-child,
 blockquote ul:last-child,
@@ -4957,10 +4957,10 @@ a.badge:focus {
   margin-left: 3px;
 }
 .jumbotron {
-  max-width: 70%;
+  max-width: 85%;
   padding-: 30px;
-  color: #737373;
-  background-color:  #e6ffe6;
+  color: #2f4f4f;
+  background-color: #87cefa;
   border: 2px #e8e8e8;
   border-style: solid;
   box-shadow: 3px 3px 3px #808080;
