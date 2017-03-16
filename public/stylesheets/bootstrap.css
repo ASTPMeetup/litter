@@ -175,6 +175,7 @@ legend {
 }
 textarea {
   overflow: auto;
+  color: #222 !important;
 }
 optgroup {
   font-weight: bold;
@@ -4959,8 +4960,8 @@ a.badge:focus {
 .jumbotron {
   max-width: 85%;
   padding-: 30px;
-  color: #2f4f4f;
-  background-color: #87cefa;
+  color: #fff;
+  background-color: #012561 !important;
   border: 2px #e8e8e8;
   border-style: solid;
   box-shadow: 3px 3px 3px #808080;
