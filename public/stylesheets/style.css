@@ -54,7 +54,7 @@ form {
   padding:0px;
 }
 
-#profile_pic {
+.profile_pic {
   float: left;
   height: 70px;
   margin-right: 15px;
@@ -67,14 +67,14 @@ form {
   width: 500px;
 }
 
-span, #fav_icon, #status_delete, #status_update {
+span, .fav_icon, .status_delete, .status_update {
   height: 25px;
   padding-left: 10px;
   float: right;
   margin-right: 10px;
 }
 
-#intro {
+.heading {
   color: #737373;
 }
 
@@ -100,7 +100,7 @@ textarea, textarea > input:focus {
 }
 
 @media (max-width: 1000px) {
-  #intro {
+  .heading {
     width: 100%;
   }
   #app {
@@ -108,7 +108,7 @@ textarea, textarea > input:focus {
   }
 }
 
-#content_p {
+.content_p {
   padding-top: 10px;
   padding-bottom: 10px;
 }

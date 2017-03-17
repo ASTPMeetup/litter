@@ -3,7 +3,7 @@ var Backbone = require('backbone');
 var StatusView = require('./StatusView.js');
 
 var StatusListView = Backbone.View.extend({
-  el: '<div></div>',
+  el: '<div role="main"></div>',
 
   initialize: function(){
     this.listenTo(this.collection, "update", this.render);

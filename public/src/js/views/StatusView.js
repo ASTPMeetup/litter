@@ -13,26 +13,26 @@ var StatusView = Backbone.View.extend({
   template: _.template('\
     <div class="jumbotron">\
       <div class="profile_info">\
-        <img src="/images/taco.gif" id="profile_pic">\
-        <h3 id="profile_name"><strong>Taco Man</strong> @tacoman4life</h3>\
+        <img role="presentation" src="/images/taco.gif" class="profile_pic" alt="profile picture">\
+        <h3 class="profile_name"><strong>Taco Man</strong> @tacoman4life</h3>\
       </div>\
       \
-      <div class="container">\
-          <p id="content_p"><%= post.get("content") %></p>\
+      <div role="list" class="container">\
+          <p role="listitem" class="content_p"><%= post.get("content") %></p>\
         \
-          <img src="/images/delete.png" id="status_delete">\
-          <img src="/images/update.png" id="status_update">\
-          <img src="/images/fav.png" id="fav_icon">\
-          <span><%= post.get("fav_count") %></span>\
+          <img role="button" src="/images/delete.png" class="status_delete" alt="delete item button">\
+          <img role="button" src="/images/update.png" class="status_update" alt="update item button">\
+          <img role="button" src="/images/fav.png" class="fav_icon" alt="increase likes button">\
+          <span role="listitem"><%= post.get("fav_count") %></span>\
       </div>\
     </div>\
     <br>\
   '),
 
   events: {
-    'click #status_delete': 'deleteStatus',
-    'click #fav_icon': 'updateFavCount',
-    'click #status_update': 'updateForm'
+    'click .status_delete': 'deleteStatus',
+    'click .fav_icon': 'updateFavCount',
+    'click .status_update': 'updateForm'
   },
 
   deleteStatus: function() {

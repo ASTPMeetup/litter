@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title><%= title %></title>
     <meta charset="utf-8">
@@ -8,15 +8,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel='stylesheet' href='/stylesheets/style.css' />
-
+    <link href="/stylesheets/bootstrap.css" rel="stylesheet">
     <script type="text/javascript" src="/javascripts/jquery.js"></script>
     <script type="text/javascript" src="/js/bundle.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <!-- <script src="/javascripts/bootstrap.js"></script> -->
-    <!-- Bootstrap Core CSS -->
-    <link href="/stylesheets/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
     <style>
     body {
         padding-top: 70px;
@@ -37,25 +31,26 @@
     </nav>
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <div style="text-align:center;">
-        <h1 id="intro" style="font-size:75px;"><strong><%= title %></strong></h1>
+        <h1 class="heading" style="font-size:75px;"><strong><%= title %></strong></h1>
       </div>
       <br>
       <div class="app_body col-lg-5 col-md-5 col-sm-12 col-xs-12">
         <br>
-        <blockquote>
-          <h3 id="intro"><strong>Here's an app demonstrating my knowledge of Backbone.js!</h3><h3 id="intro">Taco Man loves tacos and he doesn't mind tweeting to himself about it. Every tweet can be deleted, updated and liked in the status feed.</strong></h3>
+        <blockquote role="contentinfo">
+          <h3 class="heading"><strong>Here's an app demonstrating my knowledge of Backbone.js!</h3><h3 class="heading">Taco Man loves tacos and he doesn't mind tweeting to himself about it. Every tweet can be deleted, updated and liked in the status feed.</strong></h3>
         </blockquote>
         <br>
-        <div class="jumbotron">
+        <div role="form" class="jumbotron">
           <div class="profile_info">
-            <img src="/images/taco.gif" id="profile_pic">
-            <h3 id="profile_name"><strong>Taco Man</strong> @tacoman4life</h3>
+            <img src="/images/taco.gif" id="profile_pic" alt="profile image">
+            <h3 class="profile_name"><strong>Taco Man</strong> @tacoman4life</h3>
           </div>
           <div class="container">
             <form name="post_input" id="form">
-              <textarea form="form" name="content" type="text" class="content_input" rows="3" required></textarea>
+              <label id="status_submit" alt="Submit status below"></label>
+              <textarea aria-labelledby="status_submit" form="form" name="content" type="text" class="content_input" rows="3" required></textarea>
               <br>
-              <input type="submit" value="submit" class="button">
+              <input role="button" type="submit" value="submit" class="button">
             </form>
           </div>
         </div>
@@ -63,11 +58,13 @@
         <br>
         </div>
         <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-          <h1 id="intro"><strong>Status Updates</strong></h1>
+          <h1 class="heading"><strong>Status Updates</strong></h1>
           <br>
-                <div id="app">
-                <hr>
-                </div>
+
+          <div id="app">
+
+          <hr>
+          </div>
         </div>
     </div>
   </body>
