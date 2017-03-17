@@ -12,7 +12,7 @@ var FormView = Backbone.View.extend({
 
       template: _.template('\
             <form role="form" name="post_input" class="edit_status_form">\
-                <textarea form="form" name="new_content" type="text" class="content_input" rows="3" required><%= content %></textarea>\
+                <textarea aria-label="edit content form" form="form" name="new_content" type="text" class="content_input" rows="3" required><%= content %></textarea>\
                 <br><input role="button" type="submit" value="submit" class="button">\
             </form>\
       '),
